@@ -1,0 +1,221 @@
+/* Add some basic styling for the navbar */
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+}
+/* this is for my background and SECTION's IDs */
+#home {
+    height: 100vh;
+    background-image: url('view photos/Home.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 800px;
+    margin: 0px;
+}
+
+#project {
+    background: linear-gradient(rgb(0, 0, 0), rgb(46, 46, 46));
+    display: flex;
+    width: 100%;
+    height: 800px;
+    margin: 0px;
+    border: #ddd 2px solid;
+}
+
+#contact {
+    background: linear-gradient(rgb(46,46,46), rgb(255, 255, 255));
+    display: flex;
+    width: 100%;
+    height: 800px;
+    margin: 0px;
+}
+
+/* this is for my photo in the home section */
+.figure {
+    width: 650px;
+    height: 650px;
+    margin-bottom: 150px;
+}
+
+/* This is HI I'm PATRICK BORJA! */
+.introduction {
+    text-align: center;
+    display: flex;
+    position: absolute;
+    left: 60%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+
+/* This is for about title in ABOUT ME */
+.titleabout {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    font-size: 2em;
+    top: 10%;
+    left: 43.5%;
+}
+
+
+.homedesc {
+    text-align: left;
+    margin-top: -300px;
+    margin-left: 600px;
+}
+
+/* NAVIGATION BAR! */
+.navbar {
+    text-align: center;
+    position: fixed;
+    top: 10%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    margin: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    transition: transform 0.3s;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    transform: translateY(-5px);
+    color: white;
+    font-size: 1em;
+
+}
+
+/* Add styling for the responsive navigation menu */
+@media screen and (max-width: 600px) {
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* ABOUT PAGE (GALLERY PICTURES OF ME USING TAYLOR SWIFT's ALBUM) */
+
+/* ABOUT PAGE (Description) */
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px; /* Adjust spacing between image containers */
+}
+
+.image-container img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    margin-top: 200px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+.hover-text {
+    position: absolute;
+    top: 1200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%; /* Adjust the width as needed */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .hover-text {
+    opacity: 1;
+}
+
+/* PROJECT SECTION! */
+
+.subtext {
+    position: absolute;
+    font-size: 1em;
+    margin-top: 150px;
+    margin-left: 550px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+table {
+    width: 100%;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 150px;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
+    margin: 50px;
+}
+
+.image {
+    width: 60%;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+
+.image:hover {
+    border: #ddd 2px solid;
+}
+
+/* THIS IS FOR CONTACTS!  */
+
+#contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 300px;
+    color: black;
+  }
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: rgb(251, 0, 255);
+    color: white;
+    font-size: 20px;
+    padding: 20px 70px 20px 70px;
+    border: none;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(235, 89, 238);
+    color: black;
+}
